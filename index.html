@@ -3,20 +3,94 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Villanueva A. Activities</title>
+        <title>Portfolio</title>
+        <style>
+            body{
+                min-height:95vh;
+                background-image: url("show.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 900px;
+            }
+            .bgCornsilk{
+                background-color:#c4caffb9 !important;
+            }
+            #quick-links{
+                flex-direction: column;
+            }
+            .carousel-inner-img{
+                padding-top: 125px;
+                padding-left: 120px;
+                height:50vh;
+                width: 100%;
+                object-fit: contain;
+            }
+            #portCarousel{
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            .glass{
+                /* From https://css.glass */
+                background: rgba(90, 255, 235, 0.2);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(90, 120, 255, 0.3);
 
-            <style>
-                a{
-                    display: inline-block;
-                    padding: 10px;
-                }
-            </style>
-    </head>
+            }
+        </style>
+            
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous">
+    </head> 
     
-        <body style="background-color: cornsilk;">
-            <a href="Activity 1/index.html"><h1>Activity 1</h1></a>
-            <a href="Activity 2/index.html"><h1>Activity 2</h1></a>
-            <a href="Activity 3/index.html"><h1>Activity 3</h1></a>
-        </body>
+    <body class="bgCornsilk">
+        <section id="canvas">
+            <h2 class="text-center fw-light">My Portfolio/Projects</h2>
+            <div class="container">
+                <div id="portCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <a href="Activity 1/index.html"><img src="port1.png" class="d-block carousel-inner-img rounded "></a>
+                        </div>
 
+                        <div class="carousel-item">
+                            <a href="Activity 2/index.html"><img src="port2.png " class="d-block carousel-inner-img rounded "></a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="Activity 3/index.html"><img src="port3.png" class="d-block carousel-inner-img rounded "></a>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#portCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#portCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+                <div id="quick-links" class="glass text-center mx-auto mt-5 p-3 rounded" style="max-width: 900px;">
+                    <p class="mb-1">Interests: Gaming, Anime, Manga || Contact me: (09)66-546-5675 | allisterb.villanueva@gmail.com</p>
+                    <h6 class="mb-1">Quick Links:</h6>
+                    <div class="d-flex justify-content-center gap-4">
+                        <a href="Activity 1/index.html">Activity 1</a>
+                        <a href="Activity 2/index.html">Activity 2</a>
+                        <a href="Activity 3/index.html">Activity 3</a>
+                    </div>
+                </div>
+        </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+        crossorigin="anonymous"></script>
+    </body>
 </html>
