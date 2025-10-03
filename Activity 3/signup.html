@@ -9,7 +9,7 @@
                 display:flex;
                 align-items: center;
                 flex-direction: column;
-                padding-top: 20vh;
+                padding-top: 5vh;
                 background-image:url('bg.jpg'); 
                 background-size: cover;
             }
@@ -46,14 +46,21 @@
                 align-items: center;
             }
         </style>
+        
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+     <script src="validations.js"></script>
     </head>
 
     <body>
         <div class="glass">
         <h1>Sign Up</h1>
-        <form class="login">
-            <input type="text" placeholder=" User Name">
-            <input type="password" placeholder=" Password">
+        <form class="signup" id="signupForm">
+            <input type="text" name="username" placeholder=" User Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" id="password" placeholder=" Password">
+            <input type="confirmPass" name="confirmPass" placeholder ="Confirm Password">
+            <button type="submit">Sign Up</button>
         </form>
         <p><a href="index.html">Have an account?</a></p>
         </div>
